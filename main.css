@@ -1,0 +1,41 @@
+body {
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  max-width: 1980px;
+  max-height: 1020px;
+  margin: 0 auto;
+}
+
+.section__title {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 20%;
+  background: #eee;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__title {
+  align-items: flex-start;
+}
+
+.form__input {
+  width: 170px;
+}
