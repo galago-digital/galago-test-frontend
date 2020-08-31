@@ -4,6 +4,12 @@ body {
 
 .container {
   width: 95%;
+  /*
+  для чего здесь max-height?
+  если таблица работает как задумано в ней будет макс. 5 строк
+  и в высоту вместу с формое это заметно меньше чем 1020px
+  max-width так же избыточен
+  */
   max-width: 1980px;
   max-height: 1020px;
   margin: 0 auto;
@@ -14,6 +20,11 @@ body {
 }
 
 .form {
+  /*
+  display: flex; - зачем здесь? Если убрать его изменится только выравнивание,
+  что легко решается с помощью  padding или margin
+  в данном случае flex избыточен
+  */
   display: flex;
   flex-direction: column;
   justify-content: center;

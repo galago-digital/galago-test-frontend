@@ -29,6 +29,7 @@
         </label>
         <label class="form__block">
           <span class="form__title">Телефон</span>
+          <!--фу@yandex.ru - корректный адрес, но он не пройдет через этот pattern -->
           <input type="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7__________" name="phone" class="form__input" id="phone" required>
         </label>
         <label class="form__block">
@@ -48,6 +49,8 @@
           <button type="submit" id="addBtn" disabled>Отправить заявку</button>
         </div>
       </form>
+      <!--есть css файл, у таблицы есть id и class
+        зачем создавать потенциальный источник проблем без необходимости использую inline стили? -->
       <table id="races" class="races" style="width:100%">
         <thead class="races__head">
             <tr class="races__row">
@@ -61,7 +64,12 @@
               <th>Сумма взноса, руб.</th>
             </tr>
         </thead>
+        <!-- 
+          вот так выглядит добавленная строка в таблице https://www.dropbox.com/s/yhs9urod41hzbio/photo_2020-08-31_14-38-16.jpg?dl=0
+          все значения в ячейках "уехали" относительно заголовково столбцов
+        -->
     </table>
+
     </div>
   </section>
 
